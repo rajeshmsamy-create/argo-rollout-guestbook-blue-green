@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: guestbook-ui
-          image: udemykcloud534/guestbook:green
+          image: udemykcloud534/guestbook:blue
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -73,6 +73,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: guestbook-ui-blue-green
+                name: guestbook-ui
                 port:
                   number: 80
